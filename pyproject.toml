@@ -44,6 +44,8 @@ build_arch = "arm64"
 dev-dependencies = [
     "flet[all]==0.28.3",
 ]
+[tool.flet.flutter.pubspec.dependency_overrides]
+webview_flutter_android = "4.10.1"
 
 [tool.poetry]
 package-mode = false
