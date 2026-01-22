@@ -1,8 +1,6 @@
 [project]
 name = "DataShooterApp"
-version = "0.1.0"
-build_version = "0.1.0"
-build_number = 1
+version = "0.1.1"
 description = ""
 readme = "README.md"
 requires-python = ">=3.9"
@@ -10,24 +8,18 @@ authors = [
     { name = "Alf Nigredo", email = "3aico.circuss@gmail.com" }
 ]
 dependencies = [
-  "flet==0.28.3",
+  "flet==0.28.2",
   "pyautogui>=0.9.54",
   "pyperclip>=1.11.0",
 ]
 
 [tool.flet]
-# org name in reverse domain name notation, e.g. "com.mycompany".
-# Combined with project.name to build bundle ID for iOS and Android apps
+build_version = "0.1.1"
+build_number = 2
+
 org = "com.alfnigredoit"
-
-# project display name that is used as an app title on Android and iOS home screens,
-# shown in window titles and about app dialogs on desktop.
 product = "DataShooterApp"
-
-# company name to display in about app dialogs
 company = "Alf Nigredo IT"
-
-# copyright text to display in about app dialogs
 copyright = "Copyright (C) 2025 by Alf Nigredo IT"
 
 compile.app = true # --compile-app
@@ -42,7 +34,7 @@ build_arch = "arm64"
 
 [tool.uv]
 dev-dependencies = [
-    "flet[all]==0.28.3",
+    "flet[all]==0.28.2",
 ]
 [tool.flet.flutter.pubspec.dependency_overrides]
 webview_flutter_android = "4.10.1"
@@ -51,4 +43,4 @@ webview_flutter_android = "4.10.1"
 package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-flet = {extras = ["all"], version = "0.28.3"}
+flet = {extras = ["all"], version = "0.28.2"}
